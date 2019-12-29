@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.pp.dao.UserDao">
+    <select id="selectAllUsers" resultType="com.pp.bean.User">
+        select * from user
+    </select>
+
+    <delete id="deleteUserById">
+        delete from user where id = #{id}
+    </delete>
+</mapper>
